@@ -8,11 +8,12 @@ A maneira mais direta de usar variáveis de ambiente é usando nosso arquivo pac
 Vamos criar dois comandos apenas para demonstrar 2 ambientes.
 
 json
-
+```
 "scripts": {
     "start-dev": "PORT=3000 ts-node-dev --respawn src/index.ts",
     "start-prod": "PORT=4000 ts-node-dev --respawn src/index.ts"
 }
+``
 Definimos dois comandos. Para desenvolvimento, definimos start-dev, onde a variável PORT deve ter o valor 3000. E para produção, será 4000.
 
 Se executarmos nosso aplicativo
